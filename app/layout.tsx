@@ -1,12 +1,6 @@
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
 import "./globals.css"
 import type React from "react"
-
-const inter = Inter({
-  subsets: ["latin"],
-  display: "swap",
-})
 
 export const metadata: Metadata = {
   title: "LaHood Accountability | Rhetoric vs. Reality",
@@ -27,8 +21,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={inter.className}>
-      <body>{children}</body>
+    <html lang="en">
+      <body className="font-sans antialiased">{children}</body>
     </html>
   )
 }
