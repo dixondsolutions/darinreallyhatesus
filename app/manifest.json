@@ -1,0 +1,10 @@
+{
+  "name": "LaHood Accountability",
+  "short_name": "LaHood Watch",
+  "description": "Track Rep. Darin LaHood's silence on constitutional crisis",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#991B1B",
+  "icons": []
+}
