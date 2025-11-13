@@ -10,7 +10,8 @@ export function DayCounter() {
   const [minutes, setMinutes] = useState(0)
 
   useEffect(() => {
-    const startDate = new Date("2025-02-01")
+    // December 11, 2020 - When LaHood signed amicus brief supporting Texas v. Pennsylvania
+    const startDate = new Date("2020-12-11")
 
     const updateTime = () => {
       const today = new Date()
@@ -74,7 +75,13 @@ export function DayCounter() {
             <div className="mt-8 flex items-center gap-2 text-red-100">
               <Calendar className="w-5 h-5" />
               <p className="text-sm md:text-base">
-                Since February 1, 2025
+                Since December 11, 2020
+              </p>
+            </div>
+            <div className="mt-4 text-center text-red-100 text-sm max-w-md mx-auto">
+              <p>
+                The day LaHood signed an amicus brief supporting Texas v. Pennsylvania,
+                a lawsuit attempting to overturn the 2020 presidential election results
               </p>
             </div>
           </div>

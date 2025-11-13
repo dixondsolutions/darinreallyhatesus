@@ -13,7 +13,7 @@ export function AboutSection() {
       icon: <Calendar className="w-8 h-8 text-blue-600" />,
       label: "Years in Office",
       value: "Since 2015",
-      detail: "Won special election after Aaron Schock's resignation",
+      detail: "Won special election with 69% after Aaron Schock's scandal; ran unopposed in 2024",
     },
     {
       icon: <Users className="w-8 h-8 text-purple-600" />,
@@ -37,7 +37,9 @@ export function AboutSection() {
             Who is Darin LaHood?
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            A congressman who has consistently placed party loyalty and special interests ahead of his constituents' needs
+            Born July 5, 1968, LaHood has served Illinois' 16th District since 2015. Following in his father Ray LaHood's footsteps
+            (who held the seat 1995-2009 and served as Obama's Transportation Secretary), Darin has consistently placed party loyalty
+            and special interests ahead of his constituents' needs. Net worth: $108,000-$575,000.
           </p>
         </div>
 
