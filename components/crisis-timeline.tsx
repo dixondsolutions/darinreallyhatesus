@@ -3,35 +3,52 @@ import { FileSignature, Users, DollarSign, Scale } from "lucide-react"
 
 const timelineEvents = [
   {
-    date: "January 20, 2025",
-    title: "DOGE Initiative Launched",
-    description: "Trump signs an executive order rebranding USDS as DOGE, granting it broad authority.",
+    date: "April 2017",
+    title: "Revenue-Neutral Promise",
+    description: "LaHood states he will only vote for tax cuts that are 'revenue neutral' to avoid adding to the deficit.",
     icon: <FileSignature className="w-6 h-6 text-blue-500" />,
     details:
-      "The executive order establishes DOGE as a temporary organization set to terminate on July 4, 2026, with authority to 'maximize governmental efficiency'.",
+      "LaHood explicitly promised fiscal responsibility, stating he would not support legislation that increases the national debt.",
   },
   {
-    date: "January 29, 2025",
-    title: "Federal Workforce Proposal",
-    description: "DOGE proposes controversial plan to incentivize federal employee resignations.",
+    date: "December 2017",
+    title: "Tax Cuts Promise Broken",
+    description: "LaHood votes for Tax Cuts and Jobs Act, adding $1.414 trillion to national debt.",
+    icon: <DollarSign className="w-6 h-6 text-red-500" />,
+    details:
+      "Despite his April 2017 promise, LaHood voted for deficit-exploding tax cuts that primarily benefited wealthy Americans and corporations. Congressional Budget Office confirmed the massive deficit increase.",
+  },
+  {
+    date: "December 11, 2020",
+    title: "Attempted Election Overturn",
+    description: "LaHood signs amicus brief supporting Texas v. Pennsylvania to overturn 2020 election.",
+    icon: <Scale className="w-6 h-6 text-red-500" />,
+    details:
+      "LaHood was among 126 House Republicans supporting a lawsuit to discard all votes in Georgia, Michigan, Pennsylvania, and Wisconsin. The Supreme Court unanimously rejected the case. Speaker Pelosi stated signers 'brought dishonor to the House.'",
+  },
+  {
+    date: "January 6, 2021",
+    title: "Capitol Insurrection",
+    description: "Trump supporters attack Capitol; LaHood initially says Trump 'bears responsibility.'",
     icon: <Users className="w-6 h-6 text-orange-500" />,
     details:
-      "The proposal, leaked to the press, outlines a tiered buyout system based on years of service and position.",
+      "After the violent attack on the Capitol, LaHood acknowledged Trump's responsibility but voted against both impeachment efforts and later dismissed the January 6 Select Committee as a 'partisan circus.'",
   },
   {
-    date: "February 3, 2025",
-    title: "USAID Closed & Treasury Access",
-    description: "Musk abruptly closes USAID and gains access to $6 trillion Treasury payment systems.",
-    icon: <DollarSign className="w-6 h-6 text-red-500" />,
-    details: "This action sparked immediate international condemnation and accusations of financial malfeasance.",
-  },
-  {
-    date: "February 4, 2025",
-    title: "Legal Challenges Begin",
-    description: "Unions and advocacy groups sue DOGE over privacy violations and overreach.",
-    icon: <Scale className="w-6 h-6 text-purple-500" />,
+    date: "January 2024",
+    title: "Trump Endorsement",
+    description: "LaHood endorses Trump for president, reversing his January 6 accountability stance.",
+    icon: <FileSignature className="w-6 h-6 text-blue-500" />,
     details:
-      "Multiple lawsuits were filed across various jurisdictions, alleging violations of the First, Fourth, and Fifth Amendments.",
+      "Despite previously stating Trump bears responsibility for the January 6 insurrection, LaHood endorsed Trump, calling him 'the right leader for the country.'",
+  },
+  {
+    date: "May 2025",
+    title: "$3.4 Trillion Deficit Vote",
+    description: "LaHood votes for 'One Big Beautiful Bill Act' adding $3.4 trillion to deficit.",
+    icon: <DollarSign className="w-6 h-6 text-red-500" />,
+    details:
+      "LaHood praised this deficit-exploding legislation as 'bold' and 'comprehensive,' completely abandoning his 2017 promise of fiscal responsibility. The bill also cuts Illinois Medicaid by $48 billion, threatening 9 rural hospitals with closure and causing 330,000 Illinoisans to lose coverage.",
   },
 ]
 
@@ -39,7 +56,7 @@ export function CrisisTimeline() {
   return (
     <Card className="backdrop-blur-sm bg-white/30">
       <CardHeader>
-        <CardTitle className="text-2xl text-red-800">Constitutional Crisis Timeline</CardTitle>
+        <CardTitle className="text-2xl text-red-800">Timeline of Broken Promises and Contradictions</CardTitle>
       </CardHeader>
       <CardContent>
         <ol className="relative border-l border-gray-200 dark:border-gray-700">
